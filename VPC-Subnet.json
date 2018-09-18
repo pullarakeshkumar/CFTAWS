@@ -659,7 +659,7 @@
         }
     },
     "Resources": {
-        "cftvpc": {
+        "cftVPC": {
             "Type": "AWS::EC2::VPC",
             "Properties": {
                 "CidrBlock" : "10.0.0.0/16"
@@ -874,6 +874,7 @@
 			"yum install -y httpd\n",
 			"systemctl enable httpd\n",
 			"systemctl start httpd\n",
+		        "echo "hello world" >> /var/www/html/index.html\n",
 			"setenforce 0"
 			] ]
     }
